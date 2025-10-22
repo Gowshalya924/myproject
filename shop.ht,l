@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shop — Autopile</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- reuse header (you can copy same header nav from index.html) -->
+  <header class="site-header">
+    <div class="topbar">Free shipping on orders over $75 · Call us 123-456-789</div>
+    <nav class="nav container">
+      <a class="brand" href="index.html">Autopile</a>
+      <button id="menu-toggle-2" class="menu-toggle" aria-label="toggle menu">☰</button>
+      <ul class="nav-links" id="nav-links-2">
+        <li><a href="shop.html">Shop Parts</a></li>
+        <li><a href="#">Wholesale</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Shop by Category</h1>
+    <div class="categories">
+      <a class="card" href="#wheels">Wheels & Rims</a>
+      <a class="card" href="#engine">Engine</a>
+      <a class="card" href="#body">Vehicle Body Parts</a>
+      <a class="card" href="#accessories">Accessories</a>
+    </div>
+
+    <h2 id="top-sellers">All Products</h2>
+    <div id="products-grid" class="products-grid"></div>
+  </main>
+
+  <footer class="site-footer">
+    <!-- same footer markup -->
+    <div class="container copyright">© 2035 By Autopile.</div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
