@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Autopile — Premium Auto Parts</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="topbar">Free shipping on orders over $75 · Call us 123-456-789</div>
+    <nav class="nav container">
+      <a class="brand" href="index.html">Autopile</a>
+      <button id="menu-toggle" class="menu-toggle" aria-label="toggle menu">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="shop.html">Shop Parts</a></li>
+        <li><a href="shop.html?#wholesale">Wholesale</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#" id="cart-btn">Cart (<span id="cart-count">0</span>)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Shop Our Premium Auto Parts</h1>
+          <p>Build Your Dream Car Today. Now 15% Off On All Items.</p>
+          <a class="btn" href="shop.html">Shop Now</a>
+        </div>
+        <div class="hero-image">
+          <img src="assets/hero.jpg" alt="Car parts" />
+        </div>
+      </div>
+    </section>
+
+    <section class="features container">
+      <div class="feature">Free Shipping <span>On all orders over $75</span></div>
+      <div class="feature">Tested & Proven <span>Highest quality</span></div>
+      <div class="feature">Customer Service <span>Available 24/7</span></div>
+    </section>
+
+    <section class="top-sellers container">
+      <h2>Top Sellers</h2>
+      <div id="top-sellers-grid" class="products-grid"></div>
+    </section>
+
+    <section class="premium container">
+      <h2>Join Our Premium Club</h2>
+      <p>Exclusive access to early-bird sales, new arrivals and special offers.</p>
+      <a class="btn" href="about.html">Join Now</a>
+    </section>
+
+    <section class="brands container">
+      <h3>Brands We Trust</h3>
+      <div class="brand-logos">
+        <img src="assets/brand1.png" alt="">
+        <img src="assets/brand2.png" alt="">
+        <img src="assets/brand3.png" alt="">
+        <img src="assets/brand4.png" alt="">
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>The Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <address>
+          info@mysite.com<br/>
+          500 Terry Francine St., San Francisco, CA 94158<br/>
+          Tel: 123-456-7890
+        </address>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <div class="socials">
+          <a href="#">Facebook</a> · <a href="#">Instagram</a> · <a href="#">YouTube</a>
+        </div>
+      </div>
+    </div>
+    <div class="container copyright">© 2035 By Autopile. Powered by Wix</div>
+  </footer>
+
+  <div id="cart-modal" class="modal hidden">
+    <div class="modal-content">
+      <h3>Your Cart</h3>
+      <div id="cart-items"></div>
+      <div class="modal-actions">
+        <button id="clear-cart" class="btn">Clear</button>
+        <button id="checkout" class="btn primary">Checkout</button>
+        <button id="close-cart" class="btn">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script>window.SITE_SOURCE = "gowshalya07.wixsite.com";</script>
+</body>
+</html>
