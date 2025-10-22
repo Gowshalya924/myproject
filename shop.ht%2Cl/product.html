@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Product — Autopile</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- header -->
+  <header class="site-header">
+    <div class="topbar">Free shipping on orders over $75</div>
+    <nav class="nav container">
+      <a class="brand" href="index.html">Autopile</a>
+    </nav>
+  </header>
+
+  <main class="container product-page">
+    <div class="product-detail">
+      <div class="gallery">
+        <img id="product-image" src="assets/product-placeholder.jpg" alt="">
+      </div>
+      <div class="info">
+        <h1 id="product-title">Door Handle</h1>
+        <p id="product-price">₹120.00</p>
+        <p id="product-desc">High-quality door handle for many vehicles.</p>
+        <div class="actions">
+          <input id="qty" type="number" min="1" value="1" />
+          <button id="add-to-cart" class="btn primary">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+  <script>
+    // On load, read ?id=... and populate fields (simple demo)
+    const params = new URLSearchParams(location.search);
+    const id = params.get('id') || '1';
+    // main.js provides a products list we can reference
+    const product = window.SITE_PRODUCTS?.find(p => p.id===id) || {
+      id:'1', title:'Door Handle', price:'120.00', desc:'High-quality', img:'assets/product-placeholder.jpg'
+    };
+    document.getElementById('product-title').textContent = product.title;
+    document.getElementById('product-price').textContent = '₹' + product.price;
+    document.getElementById('product-desc').textContent = product.desc;
+    document.getElementById('product-image').src = product.img;
+    document.getElementById('add-to-cart').addEventListener('click', () => {
+      addToCart(product.id, parseInt(document.getElementById('qty').value || 1));
+      alert('Added to cart');
+    });
+  </script>
+</body>
+</html>
